@@ -1,0 +1,51 @@
+configure
+$ git config --global user.name "your name"
+$ git config --global user.email yourname@your.domain
+
+
+initialise
+$ mkdir yourrepo
+$ cd yourrepo
+
+$ git init
+$ git remote add origin git@github.com:yourgithubname/yourgithubreponame.git
+
+
+add files
+
+$ touch README
+$ git add README
+
+
+
+commit/push/pull/update repo
+first pull other peoples commits to your local copy
+
+$ git pull origin master
+
+
+then you can push your commits back to master
+
+$ git commit -m 'first commit'
+$ git push origin master
+
+
+
+get readonly clone of existing repo
+
+$ git clone git://github.com/osde8info/UMLet.git
+
+
+Note : you CANNOT commit back from this type of clone
+
+get readwrite clone of existing repo
+
+$ git clone  git@github.com:osde8info/UMLet.git
+
+
+Note : now your git pushes should work !
+
+tag repo
+
+$ git tag 9.9
+$ git push --tags
