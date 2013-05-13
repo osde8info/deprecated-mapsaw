@@ -1,0 +1,13 @@
+img {
+	border: 1px solid #ccc;
+	}
+	
+img.target:hover { 
+	border: 1px solid #888; 
+	cursor: move;
+	}
+
+img.source:hover { 
+	border: 1px solid #888; 
+	cursor: move;
+	}
