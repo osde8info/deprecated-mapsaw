@@ -7,13 +7,12 @@
 <meta name="msvalidate.01" content="B7ADFD045ACA16539BD148B2FE03030E" />
 <META name="y_key" content="38a9e530edbd4caa">
 
-<link rel="stylesheet" media="all" type="text/css" href="/css/mapsaw.css" />
-<script type="text/javascript" src="/js/prototype.js"></script>
-<script type="text/javascript" src="/js/scriptaculous.js"></script>
-<script type="text/javascript" src="/js/mapsaw.js"></script>
-<script type="text/javascript" src="/private/gadan.js"></script>
+<link rel="stylesheet" media="all" type="text/css" href="css/mapsaw.css" />
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js"></script>
+<script type="text/javascript" src="js/mapsaw.js"></script>
 </head>
-<?
+<?php
 require 'functions.php';
 
 $cloud="http://mapsaw.osde8info.com/tile/6681/256/12/";
@@ -46,7 +45,7 @@ $size=40;
 sizes with jr, dice, classic, grid, random and ultimate game styles
 </div>
 <table align="center">
-<? 
+<?php 
 $action = $_REQUEST['action'];
 
 @$params = explode('/',trim($action,'/'));
@@ -117,7 +116,7 @@ drag the map tiles into the correct position
 <tr>
 <td></td>
 <td>
-<? smap($missing,$size,$cmstyle,$zoom) ?>
+<?php smap($missing,$size,$cmstyle,$zoom) ?>
 </td>
 <td></td>
 </tr>
@@ -127,7 +126,7 @@ drag the map tiles into the correct position
  <img alt="osm" width="<?=$size?>" height="<?=$size?>" src="<?=$cloud."z-01346-02202.png"?>" />
 </td>
 <td>
-<? require 'foot.php' ?>
+<?php require 'foot.php' ?>
 </td>
 <td align="right">
  <img alt="osm" width="<?=$size?>" height="<?=$size?>" src="<?=$cloud."z-01346-02203.png"?>" />
@@ -137,10 +136,10 @@ drag the map tiles into the correct position
 </table>
 
 <div align="center">
-<script type="text/javascript" src="/private/gad.js"></script>
+<script type="text/javascript" src="private/gad.js"></script>
 <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
 </div>
 
-<script type="text/javascript" src="/private/gan.js"></script>
+<script type="text/javascript" src="private/gan.js"></script>
 </body>
 </html>
